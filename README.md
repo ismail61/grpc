@@ -19,3 +19,8 @@ yarn install
 ```bash
 yarn start
 ```
+
+
+#### Test the gprc server
+You need to download BloomRPC for this.
+[BloomRPC](https://www.linux-apps.com/p/1286815/)
