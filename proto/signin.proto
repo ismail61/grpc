@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package auth;
+
+message SignInUserInput {
+  string email = 1;
+  string password = 2;
+}
+
+message SignInUserResponse {
+  string status = 1;
+  string token = 2;
+}

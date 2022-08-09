@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package auth;
+
+import "user.proto";
+import "signup.proto";
+import "signin.proto";
+
+service AuthService {
+  rpc SignUpUser(SignUpUserInput) returns (SignUpUserResponse) {}
+  rpc SignInUser(SignInUserInput) returns (SignInUserResponse) {}
+  rpc GetMe(GetMeInput) returns (UserResponse) {}
+  rpc Logout(GetMeInput) returns (LogoutResponse) {}
+}
+
+message LogoutResponse { string message = 1; }
+
+message GetMeInput { string token = 1; }
